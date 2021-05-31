@@ -105,3 +105,13 @@ margin-top: 200px;
 font-family: 'squada_oneregular';
 font-size: 100px;
 }
+
+table,th,td {
+  text-align: center;
+  border : 1px solid black;
+  border-collapse: collapse;
+  margin:auto;
+}
+th,td {
+  padding: 5px;
+}
