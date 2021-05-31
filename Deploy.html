@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Call of duty: Modern warfare</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="style.css"/>
+<link rel="icon" href="call-of-duty-modern-warfare.png" type="icon">
+</head>
+<body>
+    <ul>
+        <li><a href="Loadout.html">Loadout</a></li>
+        <li><a href="Maps.html">Maps</a></li>
+        <li><a href="Deploy.html">Deploy</a></li>
+      </ul>
+    </div>
+    <div class="gumb1">
+    <button class="gumb" onclick="loadXMLDoc()">Deploy to the warzone</button>
+    <table id="cod"></table>
+  </div>
+
+  <script>
+    function loadXMLDoc() {
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          myFunction(this);
+        }
+      };
+      xmlhttp.open("GET", "Warzone.xml", true);
+      xmlhttp.send();
+    }
+    function myFunction(xml) {
+      var i;
+      var xmlDoc = xml.responseXML;
+      var table="<tr><th>Primary</th><th>Secondary</th><th>Lethal</th></tr>";
+      var x = xmlDoc.getElementsByTagName("loadout");
+      for (i = 0; i <x.length; i++) { 
+        table += "<tr><td>" +
+        x[i].getElementsByTagName("Primary")[0].childNodes[0].nodeValue +
+        "</td><td>" +
+        x[i].getElementsByTagName("Secondary")[0].childNodes[0].nodeValue +
+        "</td><td>" +
+        x[i].getElementsByTagName("Lethal")[0].childNodes[0].nodeValue +
+        "</td></tr>";
+       
+      }
+      document.getElementById("cod").innerHTML = table;
+    }
+    </script>
+
+</body>
+</html>

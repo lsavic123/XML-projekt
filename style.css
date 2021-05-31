@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'squada_oneregular';
+  src: url('squadaone-regular-webfont.woff2') format('woff2'),
+       url('squadaone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+body{
+    margin:0 auto;
+   
+}
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+     
+  
+  }
+  
+  li {
+    float: left;
+ 
+  }
+  
+  li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+
+  li a:hover {
+    background-color: #111;
+  }
+
+  button {
+    background-color: #000000; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+.Wrapper{
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  
+}
+
+
+button:active {
+  background-color: #000000;
+  transform: translateY(4px);
+}
+
+.wrapper-mapa{
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  
+}
+
+.loadout1, .loadout2, .loadout3, .loadout4, .loadout5{
+  border:1px solid #111;
+  width: 500px;
+  margin-top: 10px;
+  font-family: 'squada_oneregular';
+  float: left;
+  padding: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  
+}
+
+
+.mapa1, .mapa2, .mapa3, .mapa4, .mapa5{
+  border:1px solid #111;
+  width: 500px;
+  margin-top: 10px;
+  font-family: 'squada_oneregular';
+  float: left;
+  padding: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  
+}
+
+.gumb1 button{
+height: 300px;
+width:1000px;
+margin-top: 200px;
+font-family: 'squada_oneregular';
+font-size: 100px;
+}

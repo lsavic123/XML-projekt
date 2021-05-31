@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Class>
+<loadout number="1">
+<Primary>M4A1</Primary>
+<Secondary>Colt 1911</Secondary>
+<Lethal>Throwing knife</Lethal>
+
+</loadout>
+
+<loadout number="2">
+<Primary>CR-56 AMAX</Primary>
+<Secondary>M19</Secondary>
+<Lethal>Molotov</Lethal>
+    
+</loadout>
+
+<loadout number="3">
+<Primary>AS-VAL</Primary>
+<Secondary>Desert eagle</Secondary>
+<Lethal>Claymore</Lethal>
+        
+</loadout>
+
+<loadout number="4">
+<Primary>Groza</Primary>
+<Secondary>Diamatti</Secondary>
+<Lethal>C4</Lethal>
+            
+</loadout>
+
+<loadout number="5">
+<Primary>AK-47</Primary>
+<Secondary>Magunum</Secondary>
+<Lethal>Semtex</Lethal>
+                
+</loadout>
+</Class>
